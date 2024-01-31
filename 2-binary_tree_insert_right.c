@@ -5,18 +5,20 @@
  * binary_tree_insert_right - insert a node as the right child of current
  * @parent: ptr->parent_node
  * @value: int node.data
+ *
+ * Return: ptr->new_node || NULL
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new;
 
 	if (!parent)
-		return NULL;
+		return (NULL);
 
 	new = (binary_tree_t *)malloc(sizeof(binary_tree_t));
 
 	if (!new)
-		return NULL;
+		return (NULL);
 
 	new->n = value;
 	new->parent = parent;
