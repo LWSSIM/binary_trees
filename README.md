@@ -1,5 +1,14 @@
 # Binary Trees in C
 
+## Description/Layout
+
+This repo deals with binary trees as DS their different types and C-lang implemention.
+
+- Layout:
+	- [#]-*.c files containing algorithms and or management functions
+	- *.h header file
+	- main_tests/* simple test cases for each *.c file
+
 ## What is a Binary Tree?
 
 A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. These children are themselves the root of a binary tree. The structure resembles an inverted tree, with the topmost node as the root.
@@ -110,3 +119,4 @@ void postorderTraversal(struct Node* root) {
 - **Balanced Binary Tree:** A binary tree is balanced if the height of the left and right subtrees of any node differ by at most one. Balancing helps in maintaining efficient search operations.
 
 These concepts are fundamental to understanding binary trees in C and can serve as a strong foundation for more advanced data structure discussions.
+
