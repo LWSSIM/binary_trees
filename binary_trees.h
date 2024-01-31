@@ -31,6 +31,10 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
 /* insert node right-child */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+
+/* delete tree */
+void binary_tree_delete(binary_tree_t *tree);
+
 /*-----advanced-----*/
 
 #endif /* _BINARY_TREES_H_ */
