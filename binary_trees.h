@@ -69,6 +69,9 @@ size_t binary_tree_size(const binary_tree_t *tree);
 /* Leaves count of a tree */
 size_t binary_tree_leaves(const binary_tree_t *tree);
 
+/* node(1+ child) count of a tree */
+size_t binary_tree_nodes(const binary_tree_t *tree);
+
 /*-----advanced-----*/
 
 #endif /* _BINARY_TREES_H_ */
