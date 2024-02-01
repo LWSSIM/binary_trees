@@ -18,7 +18,14 @@ typedef struct binary_tree_s
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
 } binary_tree_t;
+/* Binary search tree */
+typedef struct binary_tree_s bst_t;
+/* AVL tree */
+typedef struct binary_tree_s avl_t;
+/* Max Binary Heap */
+typedef struct binary_tree_s heap_t;
 
+/*-----Functions-----*/
 /* visual rep for a BT */
 void binary_tree_print(const binary_tree_t *);
 
@@ -40,6 +47,9 @@ int binary_tree_is_leaf(const binary_tree_t *node);
 
 /* is node root */
 int binary_tree_is_root(const binary_tree_t *node);
+
+/* Pre-Orded traversal */
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
 /*-----advanced-----*/
 
