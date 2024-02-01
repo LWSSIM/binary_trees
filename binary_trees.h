@@ -63,6 +63,9 @@ size_t binary_tree_height(const binary_tree_t *tree);
 /* Depth of a tree */
 size_t binary_tree_depth(const binary_tree_t *tree);
 
+/* Size of a tree */
+size_t binary_tree_size(const binary_tree_t *tree);
+
 /*-----advanced-----*/
 
 #endif /* _BINARY_TREES_H_ */
