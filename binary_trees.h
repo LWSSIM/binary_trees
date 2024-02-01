@@ -66,11 +66,15 @@ size_t binary_tree_depth(const binary_tree_t *tree);
 /* Size of a tree */
 size_t binary_tree_size(const binary_tree_t *tree);
 
-/* Leaves count of a tree */
+/* Leaves count of a Btree */
 size_t binary_tree_leaves(const binary_tree_t *tree);
 
-/* node(1+ child) count of a tree */
+/* node(1+ child) count of a Btree */
 size_t binary_tree_nodes(const binary_tree_t *tree);
+
+
+/* Balance Factor of a Btree */
+int binary_tree_balance(const binary_tree_t *tree);
 
 /*-----advanced-----*/
 
