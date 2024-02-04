@@ -4,13 +4,13 @@
 #include <stddef.h>
 
 /**
-* struct binary_tree_s - Binary tree node
-*
-* @n: Integer stored in the node
-* @parent: Pointer to the parent node
-* @left: Pointer to the left child node
-* @right: Pointer to the right child node
-*/
+ * struct binary_tree_s - Binary tree node
+ *
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
 typedef struct binary_tree_s
 {
 	int n;
@@ -72,7 +72,6 @@ size_t binary_tree_leaves(const binary_tree_t *tree);
 /* node(1+ child) count of a Btree */
 size_t binary_tree_nodes(const binary_tree_t *tree);
 
-
 /* Balance Factor of a Btree */
 int binary_tree_balance(const binary_tree_t *tree);
 
@@ -88,11 +87,14 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 /* finds uncle */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
+/*-----advanced-----*/
 /* finds L.C.Ancestor */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	const binary_tree_t *second);
 
-/*-----advanced-----*/
+/* Level_Order Traversal */
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
 
 #endif /* _BINARY_TREES_H_ */
 

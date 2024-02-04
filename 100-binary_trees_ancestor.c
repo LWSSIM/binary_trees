@@ -2,21 +2,23 @@
 
 /**
  * is_on_path - check if paths cross
- * @ancestor: ptr
+ * @node: ptr
  * @target: ptr
+ *
+ * Desc: check if target node is found as a descendant of the node
  *
  * Return: int
  */
-int is_on_path(const binary_tree_t *ancestor, const binary_tree_t *target)
+int is_on_path(const binary_tree_t *node, const binary_tree_t *target)
 {
-	if (!ancestor)
+	if (!node)
 		return (0);
 
-	if (ancestor == target)
+	if (node == target)
 		return (1);
 
-	return (is_on_path(ancestor->left, target) ||
-	is_on_path(ancestor->right, target));
+	return (is_on_path(node->left, target) ||
+	is_on_path(node->right, target));
 }
 
 /**
